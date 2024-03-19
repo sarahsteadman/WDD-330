@@ -1,0 +1,33 @@
+.box {
+    background-color: rgb(68, 189, 149);
+    width: 150px;
+    height: 150px;
+    animation: myanima 3s infinite;
+    text-align: center;
+    color: white;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes myanima {
+    0% {
+        transform: rotate(0deg);
+        background-color: rgb(68, 189, 149);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: rgb(68, 189, 149);
+    }
+}
